@@ -1,0 +1,484 @@
+$primary-color: #23A6F0;
+$secondary-color-1: #40BB15;
+$secondary-color-2: #3C403D;
+$background-gradient-1: rgba(215, 20, 137, 1);
+$text-color: #252B42;
+$second-text-color: #737373;
+$light-text-color: #FFFFFF;
+$dark-background-color: #252B42;
+$light-background-color: #fff;
+$hover-color: #2A7CC7;
+$disabled-element-color: #8EC2F2;
+$muted-color: #BDBDBD;
+$success-color: #2DC071;
+$alert-color: #E77C40;
+$danger-color: #E74040;
+$light-gray-1: #FAFAFA;
+$light-gray-2: #ECECEC;
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: $dark-background-color;
+}
+.wrapper {
+    max-width: 1104px;
+    margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    &-head {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+.btn {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 17px;
+    background-color: $primary-color;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.2s;
+    &-1 {
+        background-color: $primary-color;
+        border-radius: 26px;
+        padding: 15px 25px;
+        margin-right: 5px;
+    }
+    &-2 {
+        background-color: $dark-background-color;
+        border: 1px solid #fff;
+        border-radius: 26px;
+        padding: 15px 30px;
+    }
+    &-pricing {
+        width: 80%;
+        padding: 5% 0;
+        margin-bottom: 15%;
+        margin-top: 10%;
+    }
+    &-pricing2 {
+        width: 80%;
+        padding: 5% 0;
+        margin-bottom: 15%;
+        margin-top: 10%;
+        color: $primary-color;
+        background-color: $light-background-color;
+    }
+    &-pricing:hover {
+        color: $light-background-color;
+    }
+}
+.btn:hover {
+    background-color: $success-color;
+}
+.menu {
+    color: $light-text-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 22px;
+    &-title {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 23px;
+    }
+    &-left {
+        display: flex;
+        align-items: center;
+        .nav {
+            display: flex;
+            &-item {
+                list-style-type: none;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 17px;
+                margin-right: 0px;
+                margin-left: 55px;
+            }
+            &-link {
+                color: $light-text-color;
+                transition: 0.4s;
+            }
+            &-link:hover {
+                color: $hover-color;
+            }
+        }
+    }
+    &-right {
+        .nav {
+            &-link {
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 17px;
+                padding-right: 30px;
+                color: $light-text-color;
+                transition: 0.4s;
+            }
+            &-link:hover {
+                color: $hover-color;
+            }
+        }
+    }
+    .arrow-link {
+        margin-left: 10px;
+    }
+    &-poisk {
+        display: none;
+    }
+    &-korzina {
+        display: none;
+    }
+    &-burger {
+        display: none;
+    }
+}
+.hero {
+    display: flex;
+    margin-top: 5%;
+    &-left {
+        flex: 50%;
+        margin-top: 7%;
+    }
+    &-right {
+        flex: 50%;
+        background-image: url(../img/croods-user-interface.png);
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        padding-top: 42%;
+    }
+    &-title {
+        font-size: 42px;
+        font-weight: 800;
+        line-height: 57px;
+        color: #fff;
+        width: 70%;
+    }
+    &-subtitle {
+        font-size: 16px;
+        font-weight: 500;
+        color: #fff;
+    }
+    &-btn {
+        margin-top: 10%;
+    }
+}
+.main-title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 41px;
+    color: #fff;
+    margin-top: 15%;
+    margin-bottom: 3%;
+}
+.sub-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 3%;
+    width: 100%;
+}
+.better {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 20px;
+    &-card {
+        display: flex;
+        align-items: center;
+        background-color: $light-gray-1;
+        width: 83%;
+        padding: 25px 30px;
+        margin-bottom: 35px;
+    }
+    &-image {
+        margin-right: 15px;
+    }
+    &-text {
+        color: $second-text-color;
+        line-height: 25px;
+    }
+    &-btn {
+        margin-bottom: 80px;
+    }
+}
+.titledesign {
+    text-align: center;
+    margin-top: 80px;
+    &-title {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 41px;
+        letter-spacing: 0.7px;
+        color: #fff;
+    }
+    &-subtitle {
+        display: block;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 18px;
+        letter-spacing: 0.7px;
+        color: #fff;
+        margin-top: 25px;
+        margin-bottom: 80px;
+    }
+}
+.designer {
+    background-color: $light-background-color;
+    text-align: center;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    margin-bottom: 20%;
+    &-image {
+        width: 130px;
+        height: 130px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    &-text {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 18px;
+        color: $second-text-color;
+        margin-bottom: 10px;
+        letter-spacing: 0.7px;
+        color: $second-text-color;
+    }
+    &-star {
+        width: 20px;
+        height: 20px;
+        margin-bottom: 10px;
+    }
+    &-name {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 23px;
+        letter-spacing: 0.7px;
+        color: $dark-background-color;
+    }
+    &-subname {
+        display: block;
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: 0.7px;
+        color: $second-text-color;
+        padding-bottom: 28px;
+        margin-top: 10px;
+    }
+}
+.faq {
+    margin-bottom: 10%;
+    &-header {
+        text-align: center;
+    }
+    &-title {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 41px;
+        letter-spacing: 0.14px;
+        color: $light-background-color;
+        text-transform: uppercase;
+        margin-bottom: 3%;
+    }
+    &-subtitle {
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 0.14px;
+        color: $light-background-color;
+        margin-bottom: 10%;
+    }
+    &-cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+    .card {
+        border-radius: 7px;
+        background-color: $light-background-color;
+        padding: 20px 30px;
+        width: 85%;
+        &-arrow {
+            position: absolute;
+        }
+        &-title {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 27px;
+            letter-spacing: 0.7px;
+            color: $dark-background-color;
+            width: 100%;
+            margin-left: 8%;
+            margin-bottom: 5%;
+        }
+        &-subtitle {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 27px;
+            letter-spacing: 0.14px;
+            color: $second-text-color;
+            margin-left: 8%;
+        }
+    }
+}
+.pricing {
+    margin-bottom: 10%;
+    &-header {
+        text-align: center;
+    }
+    &-title {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 41px;
+        letter-spacing: 0.14px;
+        color: $light-background-color;
+        text-transform: uppercase;
+        margin-bottom: 3%;
+    }
+    &-subtitle {
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 0.14px;
+        color: $light-background-color;
+        margin-bottom: 10%;
+    }
+    &-cards {
+        display: flex;
+        justify-content: space-around;
+    }
+    .card {
+        width: 30%;
+        border-radius: 7px;
+        background-color: $light-background-color;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5%;
+        &-title {
+            font-size: 21px;
+            font-weight: 700;
+            line-height: 23px;
+            text-transform: uppercase;
+            color: $dark-background-color;
+            padding-top: 10%;
+            padding-bottom: 5%;
+        }
+        &-info {
+            font-size: 17px;
+            font-weight: 700;
+            line-height: 17px;
+            color: $second-text-color;
+            text-align: center;
+            padding-bottom: 5%;
+        }
+        &-price {
+            display: flex;
+            align-items: center;
+            padding-bottom: 5%;
+        }
+        &-cena {
+            font-size: 28px;
+            font-weight: 700;
+            line-height: 41px;
+            color: $primary-color;
+            padding-right: 10px;
+        }
+        &-mounse {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 17px;
+            letter-spacing: 0.14px;
+            color: $disabled-element-color;
+        }
+        &-dollar {
+            color: $primary-color;
+        }
+        .items {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding-bottom: 5%;
+            margin-left: 20%;
+            &-info {
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 17px;
+                color: $dark-background-color;
+                margin-left: 10px;
+            }
+        }
+    }
+}
+.card2 {
+    width: 30%;
+    border-radius: 7px;
+    background-color: $primary-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-title {
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 23px;
+        text-transform: uppercase;
+        color: $light-background-color;
+        padding-top: 15%;
+        padding-bottom: 5%;
+    }
+    &-info {
+        font-size: 17px;
+        font-weight: 700;
+        line-height: 17px;
+        color: $light-background-color;
+        text-align: center;
+        padding-bottom: 5%;
+    }
+    &-price {
+        display: flex;
+        align-items: center;
+        padding-bottom: 5%;
+    }
+    &-cena {
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 41px;
+        color: $light-background-color;
+        padding-right: 10px;
+    }
+    &-mounse {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 17px;
+        letter-spacing: 0.14px;
+        color: $light-background-color;
+    }
+    &-dollar {
+        color: $light-background-color;
+    }
+    .items {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding-bottom: 5%;
+        margin-left: 20%;
+        &-info {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 17px;
+            color: $light-background-color;
+            margin-left: 10px;
+        }
+    }
+}
